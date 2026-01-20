@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Attendance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+<aside class="sidebar">
+  <div class="sidebar-header"><b>CoachCRM</b></div>
+  <nav class="nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="attendance.html" class="active">Attendance</a>
+    <a href="batches.html">Batches</a>
+    <a href="courses.html">Courses</a>
+    <a href="fees.html">Fees</a>
+  </nav>
+</aside>
+
+<div class="content">
+<header class="header">
+  
+  <div class="header-title">
+    <h1>Attendance</h1>
+    <p>Mark and track daily attendance</p>
+  </div>
+</header>
+
+<main>
+<div class="grid grid-4">
+  <div class="card"><h3>Total Students</h3><div class="stat-value">30</div></div>
+  <div class="card"><h3>Present</h3><div class="stat-value">26</div></div>
+  <div class="card"><h3>Absent</h3><div class="stat-value">3</div></div>
+  <div class="card"><h3>Late</h3><div class="stat-value">1</div></div>
+</div>
+
+<div class="card" style="margin-top:20px;">
+<table>
+<tr><th>Student</th><th>Status</th></tr>
+<tr><td>Rahul Sharma</td><td><span class="badge success">Present</span></td></tr>
+<tr><td>Priya Patel</td><td><span class="badge danger">Absent</span></td></tr>
+<tr><td>Aman Verma</td><td><span class="badge warning">Late</span></td></tr>
+</table>
+</div>
+</main>
+</div>
+</div>
+<script type="module" src="js/attendance.js"></script>
+</body>
+</html>

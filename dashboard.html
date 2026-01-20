@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | CoachCRM</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div style="width:36px;height:36px;border-radius:8px;background:var(--primary);"></div>
+        <strong>CoachCRM</strong>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="courses.html">Courses</a>
+      <a href="batches.html">Batches</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="fees.html">Fees</a>
+    </nav>
+  </aside>
+
+  <!-- ================= CONTENT ================= -->
+  <div class="content">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header-title">
+        <h1>Dashboard</h1>
+        <p>Welcome back! Here's what's happening today.</p>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Search students, enquiries..."
+          style="width:260px;"
+        />
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+      <!-- STATS -->
+      <div class="grid grid-4">
+
+        <div class="card stat">
+          <div>
+            <p>Total Students</p>
+            <div class="stat-value" id="studentsCount">0</div>
+            <small>from last month</small>
+          </div>
+        </div>
+
+        <div class="card stat">
+          <div>
+            <p>Today's Attendance</p>
+            <div class="stat-value" id="attendanceRate">0%</div>
+            <small>from yesterday</small>
+          </div>
+        </div>
+
+        <div class="card stat">
+          <div>
+            <p>Pending Fees</p>
+            <div class="stat-value" id="pendingFees">₹0</div>
+            <small>this week</small>
+          </div>
+        </div>
+
+        <div class="card stat">
+          <div>
+            <p>New Enquiries</p>
+            <div class="stat-value" id="newEnquiries">0</div>
+            <small>this week</small>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN GRID -->
+      <div
+        class="grid"
+        style="grid-template-columns:2fr 1fr; margin-top:24px;"
+      >
+
+        <!-- LEFT -->
+        <div class="grid">
+
+          <div class="card">
+            <h3>Recent Enquiries</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Student</th>
+                  <th>Course</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="recentEnquiries">
+                <!-- Filled by JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3>Quick Actions</h3>
+            <div class="grid grid-4">
+              <button>Add Enquiry</button>
+              <button>Add Student</button>
+              <button>Record Payment</button>
+              <button>Mark Attendance</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="grid">
+          <div class="card">
+            <h3>Attendance Summary</h3>
+            <p id="presentCount">Present: 0</p>
+            <p id="absentCount">Absent: 0</p>
+          </div>
+
+          <div class="card">
+            <h3>Upcoming Follow-ups</h3>
+            <ul id="followUps">
+              <!-- Filled by JS -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

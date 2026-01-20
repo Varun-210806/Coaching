@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enquiries</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+<aside class="sidebar">
+  <div class="sidebar-header"><b>CoachCRM</b></div>
+  <nav class="nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="enquiries.html" class="active">Enquiries</a>
+    <tbody id="enquiryTable"></tbody>
+<script type="module" src="js/enquiries.js"></script>
+
+  </nav>
+</aside>
+
+<div class="content">
+<header class="header">
+    
+  <div class="header-title">
+    <h1>Enquiries</h1>
+    <p>Manage leads and conversions</p>
+  </div>
+</header>
+
+<main>
+<div class="card">
+<table>
+<tr><th>Student</th><th>Course</th><th>Status</th></tr>
+<tr><td>Rahul Sharma</td><td>JEE</td><td><span class="badge success">Converted</span></td></tr>
+<tr><td>Priya Patel</td><td>NEET</td><td><span class="badge warning">Interested</span></td></tr>
+</table>
+</div>
+</main>
+</div>
+</div>
+<script type="module" src="js/enquiries.js"></script>
+</body>
+</html>

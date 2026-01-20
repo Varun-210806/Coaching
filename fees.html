@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fees</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+<aside class="sidebar">
+  <div class="sidebar-header"><b>CoachCRM</b></div>
+  <nav class="nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="fees.html" class="active">Fees</a>
+  </nav>
+</aside>
+
+<div class="content">
+<header class="header">
+    
+  <div class="header-title">
+    <h1>Fees & Payments</h1>
+    <p>Track fee collection</p>
+  </div>
+</header>
+
+<main>
+<div class="grid grid-4">
+  <div class="card"><h3>Collected</h3><div class="stat-value">₹3,20,000</div></div>
+  <div class="card"><h3>Pending</h3><div class="stat-value">₹85,000</div></div>
+</div>
+
+<div class="card" style="margin-top:20px;">
+<table>
+<tr><th>Student</th><th>Total</th><th>Paid</th><th>Status</th></tr>
+<tr><td>Rahul</td><td>₹1,20,000</td><td>₹1,20,000</td><td><span class="badge success">Paid</span></td></tr>
+<tr><td>Priya</td><td>₹95,000</td><td>₹45,000</td><td><span class="badge warning">Partial</span></td></tr>
+</table>
+</div>
+</main>
+</div>
+</div>
+<script type="module" src="js/fees.js"></script>
+</body>
+</html>
